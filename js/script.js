@@ -59,6 +59,7 @@ window.onload = function () {
 
 
 //fungsi hasil pendaftaran
+if (document.getElementById("nama")) {
     const params = new URLSearchParams(window.location.search);
     document.getElementById("nama").textContent = params.get("nama") || "-";
     document.getElementById("email").textContent = params.get("email") || "-";
@@ -66,3 +67,4 @@ window.onload = function () {
     document.getElementById("instansi").textContent = params.get("instansi") || "-";
     document.getElementById("pelatihan").textContent = params.get("pelatihan") || "-";
     document.getElementById("tanggal").textContent = params.get("tanggal") || "-";
+}
